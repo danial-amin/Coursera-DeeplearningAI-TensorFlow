@@ -28,8 +28,8 @@ A layer of disconnected neurons<br>
 Mass over Volume<br>
 
 Question 5<br>
-<ins>**What does a Loss function do?**</ins><br>
-Measures how good the current ‘guess’ is<br>
+What does a Loss function do?<br>
+**<ins>Measures how good the current ‘guess’ is</ins>**<br>
 Decides to stop training a neural network<br>
 Figures out if you win or lose<br>
 Generates a guess<br>
@@ -39,7 +39,7 @@ What does the optimizer do?<br>
 Measures how good the current guess is<br>
 Decides to stop training a neural network<br>
 Figures out how to efficiently compile your code<br>
-<ins>** a new and improved guess**</ins><br>
+**<ins>a new and improved guess</ins>**<br>
 
 Question 7<br>
 What is Convergence?<br>
