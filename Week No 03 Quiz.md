@@ -1,16 +1,16 @@
 Question 1
 What is a Convolution?<br>
 A technique to make images bigger<br>
-**A technique to isolate features in images**<br>
+<ins>**A technique to isolate features in images**<\ins><br>
 A technique to filter out unwanted images<br>
 A technique to make images smaller<br>
 
 Question 2
-What is a Pooling?
-A technique to make images sharper
-**A technique to reduce the information in an image while maintaining features**
-A technique to isolate features in images
-A technique to combine pictures
+What is a Pooling?<br>
+A technique to make images sharper<br>
+<ins>**A technique to reduce the information in an image while maintaining features**<\ins><br>
+A technique to isolate features in images<br>
+A technique to combine pictures<br>
 
 Question 3
 How do Convolutions improve image recognition?
