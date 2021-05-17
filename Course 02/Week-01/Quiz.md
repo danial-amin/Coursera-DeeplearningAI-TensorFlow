@@ -1,56 +1,56 @@
 
 Question 1<br>
-The diagram for traditional programming had Rules and Data In, but what came out?<br>
-Binary<br>
-Bugs<br>
-Machine Learning<br>
-<ins>**Answers**</ins><br>
+What does flow_from_directory give you on the ImageGenerator?<br>
+The ability to easily load images for training<br>
+The ability to pick the size of training images<br>
+The ability to automatically label images based on their directory name<br>
+<ins>**All of the above**</ins><br>
 
 Question 2<br>
-The diagram for Machine Learning had Answers and Data In, but what came out?<br>
-Bugs<br>
-<ins>**Rules**</ins><br>
-Binary<br>
-Models<br>
+If my Image is sized 150x150, and I pass a 3x3 Convolution over it, what size is the resulting image?<br>
+150x150<br>
+<ins>**148x148**</ins><br>
+153x153<br>
+450x450<br>
 
 Question 3<br>
-When I tell a computer what the data represents (i.e. this data is for walking, this data is for running), what is that process called?<br>
-Programming the Data<br>
-Learning the Data<br>
-**<ins>Labelling the Data</ins>**<br>
-Categorizing the Data<br>
+If my data is sized 150x150, and I use Pooling of size 2x2, what size will the resulting image be?<br>
+**<ins>75x75</ins>**<br>
+300x300<br>
+149x149<br>
+150x150<br>
 
 Question 4<br>
-What is a Dense?<br>
-**<ins>A layer of connected neurons</ins>**<br>
-A single neuron<br>
-A layer of disconnected neurons<br>
-Mass over Volume<br>
+If I want to view the history of my training, how can I access it?<br>
+Pass the parameter ‘history=true’ to the model.fit<br>
+Download the model and inspect it<br>
+**<ins>Create a variable ‘history’ and assign it to the return of model.fit or model.fit_generator</ins>**<br>
+Use a model.fit_generator<br>
 
 Question 5<br>
-What does a Loss function do?<br>
-**<ins>Measures how good the current ‘guess’ is</ins>**<br>
-Decides to stop training a neural network<br>
-Figures out if you win or lose<br>
-Generates a guess<br>
+What’s the name of the API that allows you to inspect the impact of convolutions on the images?<br>
+**<ins>The model.layers API</ins>**<br>
+The model.images API<br>
+The model.convolutions API<br>
+The model.pools API<br>
 
 Question 6<br>
-What does the optimizer do?<br>
-Measures how good the current guess is<br>
-Decides to stop training a neural network<br>
-Figures out how to efficiently compile your code<br>
-**<ins>a new and improved guess</ins>**<br>
+When exploring the graphs, the loss levelled out at about .75 after 2 epochs, but the accuracy climbed close to 1.0 after 15 epochs. What's the significance of this?<br>
+There was no point training after 2 epochs, as we overfit to the validation data<br>
+A bigger training set would give us better validation accuracy<br>
+A bigger validation set would give us better training accuracy<br>
+**<ins>There was no point training after 2 epochs, as we overfit to the training data</ins>**<br>
 
 Question 7<br>
-What is Convergence?<br>
-A dramatic increase in loss<br>
-The bad guys in the next ‘Star Wars’ movie<br>
-<ins>**The process of getting very close to the correct answer**</ins><br>
-A programming API for AI<br>
+Why is the validation accuracy a better indicator of model performance than training accuracy?<br>
+It isn't, they're equally valuable<br>
+There's no relationship between them<br>
+<ins>**The validation accuracy is based on images that the model hasn't been trained with, and thus a better indicator of how the model will perform with new images.**</ins><br>
+The validation dataset is smaller, and thus less accurate at measuring accuracy, so its performance isn't as important<br>
 
 Question 8<br>
-What does model.fit do?<br>
-It determines if your activity is good for your body<br>
-It makes a model fit available memory<br>
-<ins>**It trains the neural network to fit one set of values to another**</ins><br>
-It optimizes an existing model<br>
+Why is overfitting more likely to occur on smaller datasets?<br>
+Because in a smaller dataset, your validation data is more likely to look like your training data<br>
+Because there isn't enough data to activate all the convolutions or neurons<br>
+<ins>**Because there's less likelihood of all possible features being encountered in the training process.**</ins><br>
+Because with less data, the training will take place more quickly, and some features may be missed<br>
