@@ -1,48 +1,53 @@
 Question 1<br>
-Using Image Generator, how do you label images?<br>
-**<ins>It’s based on the directory the image is contained in</ins>**<br>
-It’s based on the file name<br>
-TensorFlow figures it out from the contents<br>
-You have to manually do it<br>
+The diagram for traditional programming had Rules and Data In, but what came out?<br>
+Binary<br>
+Bugs<br>
+Machine Learning<br>
+<ins>**Answers**</ins><br>
 
 Question 2<br>
+Why does the DNN for Fashion MNIST have 10 output neurons?<br>
+Purely arbitrary<br>
+To make it train 10x faster<br>
+**<ins>The dataset has 10 classes.</ins>**<br>
+To make it classify 10x faster<br>
+
+Question 3<br>
+What is a Convolution?<br>
+A technique to make images bigger<br>
+<ins>**A technique to isolate features in images**</ins><br>
+A technique to filter out unwanted images<br>
+A technique to make images smaller<br>
+
+Question 4<br>
+Applying Convolutions on top of our Deep neural network will have what impact on training:<br>
+It will be Slower<br>
+There will be no impact<br>
+It will be Faster<br>
+<ins>**It depends on many factors. It might make your training faster or slower, and a poorly designed Convolutional layer may even be less efficient than a plain DNN!**</ins><br>
+
+Question 5<br>
 What method on the Image Generator is used to normalize the image?<br>
 Rescale_image<br>
 normalize<br>
 **<ins>rescale</ins>**<br>
 normalize_image<br>
 
-Question 3<br>
-How did we specify the training size for the images?<br>
-The training_size parameter on the validation generator<br>
-The target_size parameter on the validation generator<br>
-The training_size parameter on the training generator<br>
-**<ins>The target_size parameter on the training generator</ins>**<br>
-
-Question 4<br>
-When we specify the input_shape to be (300, 300, 3), what does that mean?<br>
-Every Image will be 300x300 pixels, and there should be 3 Convolutional Layers<br>
-**<ins>Every Image will be 300x300 pixels, with 3 bytes to define color</ins>**<br>
-There will be 300 images, each size 300, loaded in batches of 3<br>
-There will be 300 horses and 300 humans, loaded in batches of 3<br>
-
-Question 5<br>
-If your training data is close to 1.000 accuracy, but your validation data isn’t, what’s the risk here?<br>
-No risk, that’s a great result<br>
-**<ins>You’re overfitting on your training data</ins>**<br>
-You’re underfitting on your validation data<br>
-You’re overfitting on your validation data<br>
-
 Question 6<br>
-Convolutional Neural Networks are better for classifying images like horses and humans because:<br>
-In these images, the features may be in different parts of the frame<br>
-There’s a wide variety of horses<br>
-There’s a wide variety of humans<br>
-**<ins>All of the above</ins>**<br>
+When using Image Augmentation with the ImageDataGenerator, what happens to your raw image data on-disk?<br>
+It gets overwritten, so be sure to make a backup<br>
+**<ins>Nothing</ins>**<br>
+A copy is made and the augmentation is done on the copy<br>
+A copy is made and the augmentation is done on the original<br>
 
 Question 7<br>
-After reducing the size of the images, the training results were different. Why?<br>
-**<ins>We removed some convolutions to handle the smaller images</ins>**<br>
-There was less information in the images<br>
-There was more condensed information in the images<br>
-The training was faster<br>
+Can you use Image Augmentation with Transfer Learning Models?<br>
+No, because you are using pre-set features<br>
+<ins>**Yes, because you are adding new layers at the bottom of the network, and you can use image augmentation when training these**</ins><br>
+
+Question 8<br>
+When training for multiple classes what is the Class Mode for Image Augmentation?<br>
+class_mode='multiple'<br>
+class_mode='non_binary'<br>
+class_mode='all'<br>
+<ins>**class_mode='categorical'**</ins><br>
