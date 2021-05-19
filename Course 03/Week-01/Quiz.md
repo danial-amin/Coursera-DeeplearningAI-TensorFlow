@@ -46,4 +46,3 @@ Call the padding method of the pad_sequences object, passing it ‘post’<br>
 Call the padding method of the pad_sequences object, passing it ‘after’<br>
 <ins>**Pass padding=’post’ to pad_sequences when initializing it**</ins><br>
 Pass padding=’after’ to pad_sequences when initializing it<br>
-![image](https://user-images.githubusercontent.com/76213137/118770274-90dfea00-b89a-11eb-8680-8316b0629f34.png)
