@@ -1,56 +1,49 @@
-
 Question 1<br>
-What does flow_from_directory give you on the ImageGenerator?<br>
-The ability to easily load images for training<br>
-The ability to pick the size of training images<br>
-The ability to automatically label images based on their directory name<br>
-<ins>**All of the above**</ins><br>
-
+What is the name of the object used to tokenize sentences?<br>
+CharacterTokenizer<br>
+TextTokenizer<br>
+<ins>**Tokenizer**</ins><br>
+WordTokenizer<br>
 Question 2<br>
-If my Image is sized 150x150, and I pass a 3x3 Convolution over it, what size is the resulting image?<br>
-150x150<br>
-<ins>**148x148**</ins><br>
-153x153<br>
-450x450<br>
-
+What is the name of the method used to tokenize a list of sentences?<br>
+<ins>**fit_on_texts(sentences)**</ins><br>
+tokenize_on_text(sentences)<br>
+fit_to_text(sentences)<br>
+tokenize(sentences)<br>
 Question 3<br>
-If my data is sized 150x150, and I use Pooling of size 2x2, what size will the resulting image be?<br>
-**<ins>75x75</ins>**<br>
-300x300<br>
-149x149<br>
-150x150<br>
-
+Once you have the corpus tokenized, what’s the method used to encode a list of sentences to use those tokens?<br>
+texts_to_tokens(sentences)<br>
+text_to_tokens(sentences)<br>
+text_to_sequences(sentences)<br>
+<ins>**texts_to_sequences(sentences)**</ins><br>
 Question 4<br>
-If I want to view the history of my training, how can I access it?<br>
-Pass the parameter ‘history=true’ to the model.fit<br>
-Download the model and inspect it<br>
-**<ins>Create a variable ‘history’ and assign it to the return of model.fit or model.fit_generator</ins>**<br>
-Use a model.fit_generator<br>
-
+When initializing the tokenizer, how to you specify a token to use for unknown words?<br>
+out_of_vocab=<Token><br>
+unknown_token=<Token><br>
+<ins>**oov_token=<Token>**</ins><br>
+unknown_word=<Token><br>
 Question 5<br>
-What’s the name of the API that allows you to inspect the impact of convolutions on the images?<br>
-**<ins>The model.layers API</ins>**<br>
-The model.images API<br>
-The model.convolutions API<br>
-The model.pools API<br>
-
+If you don’t use a token for out of vocabulary words, what happens at encoding?<br>
+The word isn’t encoded, and the sequencing ends<br>
+<ins>**The word isn’t encoded, and is skipped in the sequence**</ins><br>
+The word isn’t encoded, and is replaced by a zero in the sequence<br>
+The word is replaced by the most common token<br>
 Question 6<br>
-When exploring the graphs, the loss levelled out at about .75 after 2 epochs, but the accuracy climbed close to 1.0 after 15 epochs. What's the significance of this?<br>
-There was no point training after 2 epochs, as we overfit to the validation data<br>
-A bigger training set would give us better validation accuracy<br>
-A bigger validation set would give us better training accuracy<br>
-**<ins>There was no point training after 2 epochs, as we overfit to the training data</ins>**<br>
-
+If you have a number of sequences of different lengths, how do you ensure that they are understood when fed into a neural network?<br>
+Process them on the input layer of the Neural Netword using the pad_sequences property<br>
+Specify the input layer of the Neural Network to expect different sizes with dynamic_length<br>
+Make sure that they are all the same length using the pad_sequences method of the tokenizer<br>
+<ins>**Use the pad_sequences object from the tensorflow.keras.preprocessing.sequence namespace**</ins><br>
 Question 7<br>
-Why is the validation accuracy a better indicator of model performance than training accuracy?<br>
-It isn't, they're equally valuable<br>
-There's no relationship between them<br>
-<ins>**The validation accuracy is based on images that the model hasn't been trained with, and thus a better indicator of how the model will perform with new images.**</ins><br>
-The validation dataset is smaller, and thus less accurate at measuring accuracy, so its performance isn't as important<br>
-
+If you have a number of sequences of different length, and call pad_sequences on them, what’s the default result?<br>
+Nothing, they’ll remain unchanged<br>
+They’ll get cropped to the length of the shortest sequence<br>
+They’ll get padded to the length of the longest sequence by adding zeros to the end of shorter ones<br>
+<ins>**They’ll get padded to the length of the longest sequence by adding zeros to the beginning of shorter ones**</ins><br>
 Question 8<br>
-Why is overfitting more likely to occur on smaller datasets?<br>
-Because in a smaller dataset, your validation data is more likely to look like your training data<br>
-Because there isn't enough data to activate all the convolutions or neurons<br>
-<ins>**Because there's less likelihood of all possible features being encountered in the training process.**</ins><br>
-Because with less data, the training will take place more quickly, and some features may be missed<br>
+When padding sequences, if you want the padding to be at the end of the sequence, how do you do it?<br>
+Call the padding method of the pad_sequences object, passing it ‘post’<br>
+Call the padding method of the pad_sequences object, passing it ‘after’<br>
+<ins>**Pass padding=’post’ to pad_sequences when initializing it**</ins><br>
+Pass padding=’after’ to pad_sequences when initializing it<br>
+![image](https://user-images.githubusercontent.com/76213137/118770274-90dfea00-b89a-11eb-8680-8316b0629f34.png)
