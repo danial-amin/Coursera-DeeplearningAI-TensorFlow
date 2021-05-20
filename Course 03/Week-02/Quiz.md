@@ -1,54 +1,48 @@
-Question No.01<br>
-How do you use Image Augmentation in TensorFlow?<br>
-With the keras.augment API<br>
-You have to write a plugin to extend tf.layers<br>
-With the tf.augment API<br>
-**<ins>Using parameters to the ImageDataGenerator</ins>**<br>
-
+Question 1<br>
+What is the name of the TensorFlow library containing common data that you can use to train and test neural networks?<br>
+TensorFlow Data Libraries<br>
+There is no library of common data sets, you have to use your own<br>
+TensorFlow Data<br>
+<ins>**TensorFlow Datasets**</ins><br>
 Question 2<br>
-Question 2
-If my training data only has people facing left, but I want to classify people facing right, how would I avoid overfitting?<br>
-Use the ‘flip_vertical’ parameter around the Y axis<br>
-Use the ‘flip’ parameter<br>
-Use the ‘flip’ parameter and set ‘horizontal’<br>
-**<ins>Use the ‘horizontal_flip’ parameter</ins>**<br>
-
+How many reviews are there in the IMDB dataset and how are they split?<br>
+60,000 records, 80/20 train/test split<br>
+<ins>**50,000 records, 50/50 train/test split**</ins><br>
+60,000 records, 50/50 train/test split<br>
+50,000 records, 80/20 train/test split<br>
 Question 3<br>
-When training with augmentation, you noticed that the training is a little slower. Why?<br>
-Because the training is making more mistakes<br>
-Because the augmented data is bigger<br>
-**<ins>Because the image processing takes cycles</ins>**<br>
-Because there is more data to train on<br>
-
+How are the labels for the IMDB dataset encoded?<br>
+<ins>**Reviews encoded as a number 0-1**</ins><br>
+Reviews encoded as a number 1-10<br>
+Reviews encoded as a number 1-5<br>
+Reviews encoded as a boolean true/false<br>
 Question 4<br>
-What does the fill_mode parameter do?<br>
-There is no fill_mode parameter<br>
-It creates random noise in the image<br>
-**<ins>It attempts to recreate lost information after a transformation like a shear</ins>**<br>
-It masks the background of an image<br>
-
+What is the purpose of the embedding dimension?<br>
+<ins>**It is the number of dimensions for the vector representing the word encoding**</ins><br>
+It is the number of letters in the word, denoting the size of the encoding<br>
+It is the number of words to encode in the embedding<br>
+It is the number of dimensions required to encode every word in the corpus<br>
 Question 5<br>
-When using Image Augmentation with the ImageDataGenerator, what happens to your raw image data on-disk?<br>
-It gets overwritten, so be sure to make a backup<br>
-**<ins>Nothing, all augmentation is done in-memory</ins>**<br>
-A copy is made and the augmentation is done on the copy<br>
-It gets deleted<br>
-
+When tokenizing a corpus, what does the num_words=n parameter do?<br>
+<ins>**It specifies the maximum number of words to be tokenized, and picks the most common ‘n’ words**</ins><br>
+It errors out if there are more than n distinct words in the corpus<br>
+It specifies the maximum number of words to be tokenized, and picks the first ‘n’ words that were tokenized<br>
+It specifies the maximum number of words to be tokenized, and stops tokenizing when it reaches n<br>
 Question 6<br>
-How does Image Augmentation help solve overfitting?<br>
-**<ins>It manipulates the training set to generate more scenarios for features in the imagesa</ins>**<br>
-It slows down the training process<br>
-It manipulates the validation set to generate more scenarios for features in the images<br>
-It automatically fits features to images by finding them through image processing techniques<br>
-
+To use word embeddings in TensorFlow, in a sequential layer, what is the name of the class?<br>
+tf.keras.layers.Embed<br>
+<ins>**tf.keras.layers.Embedding**</ins><br>
+tf.keras.layers.WordEmbedding<br>
+tf.keras.layers.Word2Vector<br>
 Question 7<br>
-When using Image Augmentation my training gets?<br>
-Faster<br>
-Much Faster<br>
-Stays the Same<br>
-**<ins>Slower</ins>**<br>
-
+IMDB Reviews are either positive or negative. What type of loss function should be used in this scenario?<br>
+Adam<br>
+<ins>**Binary crossentropy**</ins><br>
+Binary Gradient descent<br>
+Categorical crossentropy<br>
 Question 8<br>
-Using Image Augmentation effectively simulates having a larger data set for training.<br>
-False<br>
-**<ins>True</ins>**<br>
+When using IMDB Sub Words dataset, our results in classification were poor. Why?<br>
+We didn’t train long enough<br>
+The sub words make no sense, so can’t be classified<br>
+Our neural network didn’t have enough layers<br>
+<ins>**Sequence becomes much more important when dealing with subwords, but we’re ignoring word positions**</ins><br>
