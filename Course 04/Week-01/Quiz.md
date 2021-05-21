@@ -1,56 +1,52 @@
-
 Question 1<br>
-The diagram for traditional programming had Rules and Data In, but what came out?<br>
-Binary<br>
-Bugs<br>
-Machine Learning<br>
-<ins>**Answers**</ins><br>
-
+What is an example of a Univariate time series?<br>
+Baseball scores<br>
+Fashion items<br>
+Hour by hour weather   <br>
+<ins>**Hour by hour temperature**</ins><br>
 Question 2<br>
-The diagram for Machine Learning had Answers and Data In, but what came out?<br>
-Bugs<br>
-<ins>**Rules**</ins><br>
-Binary<br>
-Models<br>
-
+What is an example of a Multivariate time series?<br>
+Fashion items<br>
+Baseball scores<br>
+<ins>**Hour by hour weather **</ins><br>
+Hour by hour temperature <br>
 Question 3<br>
-When I tell a computer what the data represents (i.e. this data is for walking, this data is for running), what is that process called?<br>
-Programming the Data<br>
-Learning the Data<br>
-**<ins>Labelling the Data</ins>**<br>
-Categorizing the Data<br>
-
+What is imputed data?<br>
+<ins>**A projection of unknown (usually past or missing) data**</ins><br>
+A good prediction of future data<br>
+Data that has been withheld for various reasons<br>
+A bad prediction of future data<br>
 Question 4<br>
-What is a Dense?<br>
-**<ins>A layer of connected neurons</ins>**<br>
-A single neuron<br>
-A layer of disconnected neurons<br>
-Mass over Volume<br>
-
+A sound wave is a good example of time series data<br>
+<ins>**TRUE**</ins><br>
+FALSE<br>
 Question 5<br>
-What does a Loss function do?<br>
-**<ins>Measures how good the current ‘guess’ is</ins>**<br>
-Decides to stop training a neural network<br>
-Figures out if you win or lose<br>
-Generates a guess<br>
-
+What is Seasonality?<br>
+Weather data<br>
+Data that is only available at certain times of the year<br>
+<ins>**A regular change in shape of the data**</ins><br>
+Data aligning to the 4 seasons of the calendar<br>
 Question 6<br>
-What does the optimizer do?<br>
-Measures how good the current guess is<br>
-Decides to stop training a neural network<br>
-Figures out how to efficiently compile your code<br>
-**<ins>a new and improved guess</ins>**<br>
-
+What is a trend?<br>
+An overall consistent upward direction for data<br>
+<ins>**An overall direction for data regardless of direction**</ins><br>
+An overall consistent downward direction for data<br>
+An overall consistent flat direction for data<br>
 Question 7<br>
-What is Convergence?<br>
-A dramatic increase in loss<br>
-The bad guys in the next ‘Star Wars’ movie<br>
-<ins>**The process of getting very close to the correct answer**</ins><br>
-A programming API for AI<br>
-
+In the context of time series, what is noise?<br>
+Data that doesn’t have a trend<br>
+Sound waves forming a time series<br>
+Data that doesn’t have seasonality<br>
+<ins>**Unpredictable changes in time series data**</ins><br>
 Question 8<br>
-What does model.fit do?<br>
-It determines if your activity is good for your body<br>
-It makes a model fit available memory<br>
-<ins>**It trains the neural network to fit one set of values to another**</ins><br>
-It optimizes an existing model<br>
+What is autocorrelation?<br>
+Data that doesn’t have noise<br>
+Data that automatically lines up seasonally<br>
+Data that automatically lines up in trends<br>
+<ins>**Data that follows a predictable shape, even if the scale is different**</ins><br>
+Question 9<br>
+What is a non-stationary time series?<br>
+<ins>**One that has a disruptive event breaking trend and seasonality **</ins><br>
+One that moves seasonally<br>
+One that has a constructive event forming trend and seasonality<br>
+One that is consistent across all seasons<br>
