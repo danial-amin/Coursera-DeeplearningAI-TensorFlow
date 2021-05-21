@@ -1,48 +1,48 @@
 Question 1<br>
-Using Image Generator, how do you label images?<br>
-**<ins>It’s based on the directory the image is contained in</ins>**<br>
-It’s based on the file name<br>
-TensorFlow figures it out from the contents<br>
-You have to manually do it<br>
-
+How do you add a 1 dimensional convolution to your model for predicting time series data?<br>
+Use a Convolution1D layer type<br>
+Use a 1DConv layer type<br>
+Use a 1DConvolution layer type<br>
+<ins>**Use a Conv1D layer type**</ins><br>
 Question 2<br>
-What method on the Image Generator is used to normalize the image?<br>
-Rescale_image<br>
-normalize<br>
-**<ins>rescale</ins>**<br>
-normalize_image<br>
-
+What’s the input shape for a univariate time series to a Conv1D? <br>
+[1, None]<br>
+[1]<br>
+<ins>**[None, 1]**</ins><br>
+[]<br>
 Question 3<br>
-How did we specify the training size for the images?<br>
-The training_size parameter on the validation generator<br>
-The target_size parameter on the validation generator<br>
-The training_size parameter on the training generator<br>
-**<ins>The target_size parameter on the training generator</ins>**<br>
-
+You used a sunspots dataset that was stored in CSV. What’s the name of the Python library used to read CSVs?<br>
+PyCSV<br>
+PyFiles<br>
+<ins>**CSV**</ins><br>
+CommaSeparatedValues<br>
 Question 4<br>
-When we specify the input_shape to be (300, 300, 3), what does that mean?<br>
-Every Image will be 300x300 pixels, and there should be 3 Convolutional Layers<br>
-**<ins>Every Image will be 300x300 pixels, with 3 bytes to define color</ins>**<br>
-There will be 300 images, each size 300, loaded in batches of 3<br>
-There will be 300 horses and 300 humans, loaded in batches of 3<br>
-
+If your CSV file has a header that you don’t want to read into your dataset, what do you execute before iterating through the file using a ‘reader’ object?<br>
+reader.next<br>
+<ins>**next(reader)**</ins><br>
+reader.ignore_header()<br>
+reader.read(next)<br>
 Question 5<br>
-If your training data is close to 1.000 accuracy, but your validation data isn’t, what’s the risk here?<br>
-No risk, that’s a great result<br>
-**<ins>You’re overfitting on your training data</ins>**<br>
-You’re underfitting on your validation data<br>
-You’re overfitting on your validation data<br>
-
+When you read a row from a reader and want to cast column 2 to another data type, for example, a float, what’s the correct syntax?<br>
+float f = row[2].read()<br>
+<ins>**float(row[2]) **</ins><br>
+Convert.toFloat(row[2])<br>
+You can’t. It needs to be read into a buffer and a new float instantiated from the buffer<br>
 Question 6<br>
-Convolutional Neural Networks are better for classifying images like horses and humans because:<br>
-In these images, the features may be in different parts of the frame<br>
-There’s a wide variety of horses<br>
-There’s a wide variety of humans<br>
-**<ins>All of the above</ins>**<br>
-
+What was the sunspot seasonality?<br>
+22 years<br>
+11 years<br>
+<ins>**11 or 22 years depending on who you ask**</ins><br>
+4 times a year<br>
 Question 7<br>
-After reducing the size of the images, the training results were different. Why?<br>
-**<ins>We removed some convolutions to handle the smaller images</ins>**<br>
-There was less information in the images<br>
-There was more condensed information in the images<br>
-The training was faster<br>
+After studying this course, what neural network type do you think is best for predicting time series like our sunspots dataset?<br>
+DNN<br>
+Convolutions<br>
+RNN / LSTM<br>
+<ins>**A combination of all of the above**</ins><br>
+Question 8<br>
+Why is MAE a good analytic for measuring accuracy of predictions for time series?<br>
+It biases towards small errors<br>
+It punishes larger errors <br>
+<ins>**It doesn’t heavily punish larger errors like square errors do**</ins><br>
+It only counts positive errors<br>
